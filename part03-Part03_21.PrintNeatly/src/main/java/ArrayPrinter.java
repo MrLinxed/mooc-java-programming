@@ -8,6 +8,12 @@ public class ArrayPrinter {
     }
 
     public static void printNeatly(int[] array) {
-        // Write some code in here
+        for (int i = 0; i < array.length; i++) {
+            boolean isLast = i == array.length -1;
+            System.out.print(array[i]);
+            if (!isLast) {
+                System.out.print(", "); 
+            } 
+        }
     }
 }
